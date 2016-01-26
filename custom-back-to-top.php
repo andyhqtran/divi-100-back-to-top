@@ -143,15 +143,15 @@ class ET_Divi_100_Custom_Back_To_Top {
                 <select name="search-field-style" id="search-field-style">
                   <?php
                   // Get saved style
-                  $csf_style = $this->get_selected_style();
+                  $style = $this->get_selected_style();
 
                   // Render options
-                  foreach ( $this->get_styles() as $style_id => $style ) {
+                  foreach ( $this->get_styles() as $style_id => $style_label ) {
                     printf(
                       '<option value="%1$s" %3$s>%2$s</option>',
                       esc_attr( $style_id ),
-                      esc_html( $style ),
-                      "{$csf_style}" === "{$style_id}" ? 'selected="selected"' : ''
+                      esc_html( $style_label ),
+                      "{$style}" === "{$style_id}" ? 'selected="selected"' : ''
                     );
                   }
                   ?>
@@ -195,9 +195,9 @@ class ET_Divi_100_Custom_Back_To_Top {
    * @return string
    */
   function get_selected_style() {
-    $csf_style = get_option( $this->plugin_prefix . 'styles', '' );
+    $style = get_option( $this->plugin_prefix . 'styles', '' );
 
-    return apply_filters( $this->plugin_prefix . 'get_selected_style', $csf_style );
+    return apply_filters( $this->plugin_prefix . 'get_selected_style', $style );
   }
 
   /**
