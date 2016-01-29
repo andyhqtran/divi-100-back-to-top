@@ -1,0 +1,36 @@
+@include style(3) {
+  display: block;
+  right: 24px;
+  bottom: 0;
+  height: 40px;
+
+  @include elevation(1);
+
+  border-radius: 4px;
+  text-align: center;
+  font-family: inherit;
+  line-height: 1;
+  transform-origin: top right;
+  transform: rotate(-45deg);
+  padding: 0 20px;
+  box-sizing: border-box;
+  visibility: hidden;
+  animation: none;
+  transition: 0.3s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+
+  &:hover {
+    @include elevation(3);
+  }
+
+  &:before {
+    content: "Back To Top";
+    font-size: 14px;
+  }
+
+  &.et-visible {
+    right: 24px;
+    bottom: 24px;
+    transform: none;
+    visibility: visible;
+  }
+}
