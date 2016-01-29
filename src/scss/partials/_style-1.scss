@@ -1,0 +1,21 @@
+@include style(1) {
+  bottom: 24px;
+  width: 54px;
+  height: 54px;
+
+  @include elevation(1);
+
+  border-radius: 100%;
+  padding: 0;
+  text-align: center;
+  line-height: 54px;
+  transition: 0.3s ease;
+
+  &:hover {
+    @include elevation(3);
+  }
+
+  &.et-visible {
+    right: 24px;
+  }
+}
