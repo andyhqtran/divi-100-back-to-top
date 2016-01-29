@@ -1,28 +1,24 @@
 @include style(2) {
   display: block;
-  right: 0;
+  right: 24px;
   bottom: 24px;
-  width: 40px;
-  height: 40px;
+  background: 0 !important;
+  width: 54px;
+  height: 54px;
+  box-shadow: inset 0 0 0 2px $white, inset 0 0 3px 2px rgba(0, 0, 0, 0.12), inset 0 0 6px 2px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
   visibility: hidden;
-
-  @include elevation(1);
-
-  border-radius: 4px;
+  border-radius: 100%;
   padding: 0;
   text-align: center;
-  line-height: 40px;
-  transform: rotate(45deg);
+  line-height: 54px;
+  transform: scale(0) rotate(-180deg);
   animation: none;
   transition: 0.3s cubic-bezier(0.28, 0.55, 0.385, 1.65);
 
-  &:hover {
-    @include elevation(3);
-  }
-
   &.et-visible {
     right: 24px;
-    transform: none;
+    transform: scale(1) rotate(0deg);
     visibility: visible;
   }
 }
