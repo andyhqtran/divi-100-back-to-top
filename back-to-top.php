@@ -6,7 +6,7 @@
 */
 
 /*
-* Plugin Name: Custom Back To Top
+* Plugin Name: Divi 100 Back To Top
 * Plugin URI: https://elegantthemes.com/
 * Description: This plugin gives you the option to choose between 4 different back to top variations.
 * Author: Elegant Themes
