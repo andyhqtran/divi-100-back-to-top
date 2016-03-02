@@ -186,6 +186,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 
 		// Assign specific class to <body> if needed
 		if ( '' !== $selected_style ) {
+			$classes[] = esc_attr(  $this->config['plugin_id'] );
 			$classes[] = esc_attr(  $this->config['plugin_prefix'] . '-style-' . $selected_style );
 		}
 
