@@ -137,7 +137,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 		if ( is_admin() ) {
 			$settings_args = array(
 				'plugin_id'       => $this->config['plugin_id'],
-				'preview_dir_url' => plugin_dir_url( __FILE__ ) . 'preview/',
+				'preview_dir_url' => plugin_dir_url( __FILE__ ) . 'assets/preview/',
 				'title'           => $this->config['plugin_name'],
 				'description'     => $this->config['plugin_description'],
 				'fields' => array(
@@ -199,7 +199,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 	* @return void
 	*/
 	function enqueue_frontend_scripts() {
-		wp_enqueue_style( 'custom-back-to-top', plugin_dir_url( __FILE__ ) . 'css/style.css', array(), $this->config['plugin_version'] );
-		wp_enqueue_script( 'custom-back-to-top', plugin_dir_url( __FILE__ ) . 'js/scripts.js', array( 'jquery', 'divi-custom-script' ), $this->config['plugin_version'], true );
+		wp_enqueue_style( 'custom-back-to-top', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), $this->config['plugin_version'] );
+		wp_enqueue_script( 'custom-back-to-top', plugin_dir_url( __FILE__ ) . 'assets/js/scripts.js', array( 'jquery', 'divi-custom-script' ), $this->config['plugin_version'], true );
 	}
 }
