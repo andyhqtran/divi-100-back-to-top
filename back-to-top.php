@@ -52,11 +52,11 @@ class ET_Divi_100_Custom_Back_To_Top_Config {
 		return array(
 			'main_prefix'        => $main_prefix,
 			'plugin_name'        => __( 'Custom Back To Top' ),
-			'plugin_description' => __( 'Nullam quis risus eget urna mollis ornare vel eu leo.' ),
+			'plugin_description' => __( 'This plugin gives you the option to choose between 4 different back to top variations' ),
 			'plugin_slug'        => $plugin_slug,
 			'plugin_id'          => "{$main_prefix}{$plugin_slug}",
 			'plugin_prefix'      => "{$main_prefix}{$plugin_slug}-",
-			'plugin_version'     => 20160526,
+			'plugin_version'     => 20160601,
 			'plugin_dir_path'    => plugin_dir_path( __FILE__ ),
 		);
 	}
@@ -137,6 +137,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 		if ( is_admin() ) {
 			$settings_args = array(
 				'plugin_id'       => $this->config['plugin_id'],
+				'plugin_slug'     => $this->config['plugin_slug'],
 				'preview_dir_url' => plugin_dir_url( __FILE__ ) . 'assets/preview/',
 				'title'           => $this->config['plugin_name'],
 				'description'     => $this->config['plugin_description'],
@@ -147,7 +148,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 						'preview_height'    => 300,
 						'id'                => 'style',
 						'label'             => __( 'Select Style' ),
-						'description'       => __( 'Proper description goes here' ),
+						'description'       => __( 'Select style for back to top link' ),
 						'options'           => $this->get_styles(),
 						'sanitize_callback' => 'sanitize_text_field',
 					),
