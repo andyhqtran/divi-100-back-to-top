@@ -52,7 +52,6 @@ class ET_Divi_100_Custom_Back_To_Top_Config {
 		return array(
 			'main_prefix'        => $main_prefix,
 			'plugin_name'        => __( 'Custom Back To Top' ),
-			'plugin_description' => __( 'This plugin gives you the option to choose between 4 different back to top variations' ),
 			'plugin_slug'        => $plugin_slug,
 			'plugin_id'          => "{$main_prefix}{$plugin_slug}",
 			'plugin_prefix'      => "{$main_prefix}{$plugin_slug}-",
@@ -140,7 +139,6 @@ class ET_Divi_100_Custom_Back_To_Top {
 				'plugin_slug'     => $this->config['plugin_slug'],
 				'preview_dir_url' => plugin_dir_url( __FILE__ ) . 'assets/preview/',
 				'title'           => $this->config['plugin_name'],
-				'description'     => $this->config['plugin_description'],
 				'fields' => array(
 					array(
 						'type'              => 'select',
