@@ -5,6 +5,34 @@ The **Divi 100 - Back To Top Plugin** is made for Divi as apart of the [Divi 100
 
 ## What's Included
 ```
+Divi-100-Back-To-Top
+├── LICENSE
+├── README.md
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   └── scripts.js
+│   └── preview
+│       ├── style-1.gif
+│       ├── style-2.gif
+│       ├── style-3.gif
+│       ├── style-4.gif
+│       ├── style-5.gif
+│       ├── style-6.gif
+│       └── style-7.gif
+├── back-to-top.php
+├── divi-100-setup
+│   ├── class-divi-100-settings.php
+│   ├── class-divi-100-utils.php
+│   ├── css
+│   │   └── admin-style.css
+│   ├── divi-100-setup.php
+│   └── js
+│       └── admin-scripts.js
+└── preview.png
+
+7 directories, 18 files
 ```
 
 ## Installation
