@@ -1,28 +1,15 @@
-@include style(3) {
-  display: block;
-  right: 0;
-  bottom: 24px;
-  width: 40px;
-  height: 40px;
-  visibility: hidden;
+.et_divi_100_custom_back_to_top {
+  &--style-3 {
+    .et_pb_scroll_top {
+      border-radius: 4px;
 
-  @include elevation(1);
+      &.et-visible {
+        transform: scale(1) rotate(405deg);
+      }
 
-  border-radius: 4px;
-  padding: 0;
-  text-align: center;
-  line-height: 40px;
-  transform: rotate(45deg);
-  animation: none;
-  transition: 0.3s cubic-bezier(0.28, 0.55, 0.385, 1.65);
-
-  &:hover {
-    @include elevation(3);
-  }
-
-  &.et-visible {
-    right: 24px;
-    transform: none;
-    visibility: visible;
+      .et-icon-arrow-up {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
   }
 }
