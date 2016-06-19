@@ -1,4 +1,43 @@
 @import "modules/base";
+.et_divi_100_custom_back_to_top {
+  .et_pb_scroll_top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #6C2EB9;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease, transform 0.6s ease;
+    cursor: pointer;
+
+    &:before {
+      display: none;
+    }
+
+    &,
+    &.et-visible,
+    &.et-hidden {
+      animation: none !important;
+    }
+
+    &,
+    &.et-hidden {
+      transform: scale(0) rotate(0deg);
+    }
+
+    &.et-visible {
+      transform: scale(1) rotate(360deg);
+    }
+
+    &:before,
+    .et-icon-arrow-up {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
 
 @import "partials/style-1";
 @import "partials/style-2";
