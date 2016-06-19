@@ -172,6 +172,7 @@ class ET_Divi_100_Custom_Back_To_Top {
 			'4' => __( 'Four' ),
 			'5' => __( 'Five' ),
 			'6' => __( 'Six' ),
+			'7' => __( 'Seven' ),
 		) );
 	}
 

@@ -1,6 +1,7 @@
 @import "modules/base";
 .et_divi_100_custom_back_to_top {
   .et_pb_scroll_top {
+    z-index: 9999999;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -30,7 +31,6 @@
       transform: scale(1) rotate(360deg);
     }
 
-    &:before,
     .et-icon-arrow-up {
       position: absolute;
       top: 50%;
@@ -46,3 +46,4 @@
 @import "partials/style-4";
 @import "partials/style-5";
 @import "partials/style-6";
+@import "partials/style-7";

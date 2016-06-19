@@ -1,31 +1,17 @@
-@include style(4) {
-  display: block;
-  right: 0;
-  bottom: 24px;
-  width: 40px;
-  height: 40px;
-  background: 0;
-  visibility: hidden;
+.et_divi_100_custom_back_to_top {
+  &--style-4 {
+    .et_pb_scroll_top {
+      right: 0;
+      border-radius: 4px 0 0 4px;
 
-  @include elevation(1);
+      &,
+      &.et-hidden {
+        transform: scale(1) translate(100%, 0);
+      }
 
-  border-radius: 4px;
-  padding: 0;
-  box-shadow: inset 0 0 0 2px $white, inset 0 0 3px 2px rgba(0, 0, 0, 0.12), inset 0 0 6px 2px rgba(0, 0, 0, 0.12), 0 0 3px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  line-height: 40px;
-  transform: rotate(45deg);
-  animation: none;
-  transition: 0.3s cubic-bezier(0.28, 0.55, 0.385, 1.65);
-
-  &:hover {
-    @include elevation(3);
-  }
-
-  &.et-visible {
-    right: 24px;
-    transform: none;
-    visibility: visible;
+      &.et-visible {
+        transform: none;
+      }
+    }
   }
 }

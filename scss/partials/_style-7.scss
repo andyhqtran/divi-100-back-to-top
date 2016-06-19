@@ -1,29 +1,28 @@
 .et_divi_100_custom_back_to_top {
-  &--style-6 {
+  &--style-7 {
     .et_pb_scroll_top {
       right: 0;
+      left: 0;
+      bottom: 0;
       width: auto;
-      border-radius: 4px 4px 0 0;
       padding: 0 20px;
       line-height: 40px;
 
       &:before {
         content: 'Back To Top';
-        display: inline-block;
+        display: block;
         color: #FFF;
         font-weight: 700;
+        text-align: center;
       }
 
       &,
       &.et-hidden {
-        right: 40px;
-        bottom: 100px;
-        transform-origin: right top;
-        transform: scale(1) translate(100%, 0) rotate(-90deg);
+        transform: scale(1);
       }
 
       &.et-visible {
-        transform: rotate(-90deg);
+        transform: none;
       }
 
       .et-icon-arrow-up {

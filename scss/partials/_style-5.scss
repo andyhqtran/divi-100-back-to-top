@@ -1,37 +1,31 @@
-@include style(5) {
-  display: block;
-  right: 24px;
-  bottom: 0;
-  height: 40px;
+.et_divi_100_custom_back_to_top {
+  &--style-5 {
+    .et_pb_scroll_top {
+      right: 0;
+      width: auto;
+      border-radius: 4px 0 0 4px;
+      padding: 0 20px;
+      line-height: 40px;
 
-  @include elevation(1);
+      &:before {
+        content: 'Back To Top';
+        display: inline-block;
+        color: #FFF;
+        font-weight: 700;
+      }
 
-  border-radius: 4px;
-  text-align: center;
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1;
-  transform-origin: top right;
-  transform: rotate(-45deg);
-  padding: 0 20px;
-  box-sizing: border-box;
-  visibility: hidden;
-  animation: none;
-  transition: 0.3s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+      &,
+      &.et-hidden {
+        transform: scale(1) translate(100%, 0);
+      }
 
-  &:hover {
-    @include elevation(3);
-  }
+      &.et-visible {
+        transform: none;
+      }
 
-  &:before {
-    content: "Back To Top";
-    font-size: 14px;
-  }
-
-  &.et-visible {
-    right: 24px;
-    bottom: 24px;
-    transform: none;
-    visibility: visible;
+      .et-icon-arrow-up {
+        display: none;
+      }
+    }
   }
 }
