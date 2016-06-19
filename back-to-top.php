@@ -51,7 +51,7 @@ class ET_Divi_100_Custom_Back_To_Top_Config {
 
 		return array(
 			'main_prefix'        => $main_prefix,
-			'plugin_name'        => __( 'Custom Back To Top' ),
+			'plugin_name'        => __( 'Back To Top' ),
 			'plugin_slug'        => $plugin_slug,
 			'plugin_id'          => "{$main_prefix}{$plugin_slug}",
 			'plugin_prefix'      => "{$main_prefix}{$plugin_slug}-",
